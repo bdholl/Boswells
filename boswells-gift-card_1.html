@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>★彡 $20 GIFT CARD!!! 彡★ Boswell's ★</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Bungee&family=Monoton&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { overflow-x: hidden; }
+
+  body {
+    font-family: 'Comic Sans MS', 'Bungee', cursive, sans-serif;
+    text-align: center;
+    color: #fff;
+    background: repeating-linear-gradient(
+      45deg,
+      #ff00cc 0px, #ff00cc 40px,
+      #3333ff 40px, #3333ff 80px,
+      #00ffcc 80px, #00ffcc 120px,
+      #ffcc00 120px, #ffcc00 160px
+    );
+    background-size: 400% 400%;
+    animation: slide 4s linear infinite;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%92%B0%3C/text%3E%3C/svg%3E"), auto;
+  }
+
+  @keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: 160px 160px; }
+  }
+
+  /* scrolling marquees */
+  .marquee {
+    background: #000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-top: 4px ridge #ffff00;
+    border-bottom: 4px ridge #ffff00;
+    text-shadow: 0 0 8px #00ff00;
+  }
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 12s linear infinite;
+  }
+  .marquee.rtl span { animation-direction: reverse; }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .wrap { padding: 30px 12px 60px; position: relative; z-index: 2; }
+
+  .blink { animation: blink 0.6s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .eyebrow {
+    font-family: 'Monoton', cursive;
+    font-size: clamp(20px, 5vw, 44px);
+    color: #fff200;
+    text-shadow: 3px 3px 0 #ff0066, 6px 6px 0 #000;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+
+  /* THE GIANT WORDART */
+  .twenty {
+    font-family: 'Bungee Shade', 'Impact', sans-serif;
+    font-size: clamp(90px, 30vw, 320px);
+    line-height: 0.85;
+    color: #ffd700;
+    -webkit-text-stroke: 4px #b8002e;
+    text-shadow:
+      4px 4px 0 #ff00cc,
+      8px 8px 0 #00ffff,
+      12px 12px 0 #000;
+    animation: pulse 0.7s ease-in-out infinite alternate, hue 6s linear infinite;
+    margin: 0;
+  }
+  @keyframes pulse { from { transform: scale(1) rotate(-2deg); } to { transform: scale(1.08) rotate(2deg); } }
+  @keyframes hue { from { filter: hue-rotate(0deg); } to { filter: hue-rotate(360deg); } }
+
+  .giftcard {
+    font-family: 'Bungee', 'Impact', sans-serif;
+    font-size: clamp(40px, 12vw, 130px);
+    color: #fff;
+    -webkit-text-stroke: 3px #000;
+    text-shadow: 0 0 10px #ff00ff, 5px 5px 0 #0000ff;
+    line-height: 1;
+    margin: 4px 0;
+  }
+
+  .from {
+    font-family: 'Bungee', cursive;
+    font-size: clamp(34px, 11vw, 120px);
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33ff00, #00ffff, #cc00ff, #ff0000);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #000;
+    animation: rainbowmove 3s linear infinite;
+    margin: 10px 0;
+    filter: drop-shadow(4px 4px 0 #000);
+  }
+  @keyframes rainbowmove { to { background-position: 400% 0; } }
+
+  .from small { display: block; font-size: 0.45em; color: #fff; -webkit-text-fill-color:#fff; -webkit-text-stroke:0; filter:none; text-shadow: 2px 2px 0 #ff00aa; }
+
+  /* spinning starbursts */
+  .star {
+    position: fixed;
+    font-size: clamp(60px, 14vw, 150px);
+    z-index: 1;
+    animation: spin 4s linear infinite;
+    text-shadow: 0 0 12px #fff;
+    pointer-events: none;
+  }
+  .star.tl { top: 60px; left: 10px; }
+  .star.tr { top: 60px; right: 10px; animation-direction: reverse; }
+  .star.bl { bottom: 10px; left: 10px; animation-direction: reverse; }
+  .star.br { bottom: 10px; right: 10px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* the FREE badge */
+  .badge {
+    display: inline-block;
+    margin: 24px auto;
+    background: radial-gradient(circle, #ff0000, #cc0000);
+    color: #ffff00;
+    font-family: 'Impact', sans-serif;
+    font-size: clamp(30px, 9vw, 80px);
+    padding: 40px;
+    border-radius: 50%;
+    width: clamp(180px, 50vw, 320px);
+    height: clamp(180px, 50vw, 320px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 8px #fff, 0 0 0 16px #ff00cc, 0 0 40px #000;
+    transform: rotate(-12deg);
+    animation: wobble 0.5s ease-in-out infinite alternate;
+    text-shadow: 3px 3px 0 #000;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  @keyframes wobble { from { transform: rotate(-15deg) scale(1); } to { transform: rotate(-8deg) scale(1.05); } }
+
+  /* the GIANT tacky button */
+  .claim {
+    font-family: 'Impact', sans-serif;
+    font-size: clamp(28px, 8vw, 64px);
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(180deg, #00ff00 0%, #009900 50%, #006600 100%);
+    border: 6px outset #00ff44;
+    border-radius: 16px;
+    padding: 22px 50px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 30px #00ff00, inset 0 0 20px rgba(255,255,255,0.5);
+    text-shadow: 3px 3px 0 #000;
+    letter-spacing: 2px;
+    animation: btnpulse 0.8s ease-in-out infinite alternate;
+  }
+  .claim:hover { background: linear-gradient(180deg, #ffff00, #ff9900); color:#000; transform: scale(1.1); }
+  .claim:active { border-style: inset; }
+  @keyframes btnpulse { from { box-shadow: 0 0 20px #00ff00; } to { box-shadow: 0 0 50px #ffff00, 0 0 80px #00ff00; } }
+
+  .underline {
+    font-size: clamp(16px, 4vw, 26px);
+    background: #ffff00;
+    color: #ff0000;
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 20px 6px;
+    font-weight: bold;
+    transform: rotate(-3deg);
+    border: 3px dashed #ff0000;
+  }
+
+  .counter {
+    margin-top: 40px;
+    background: #000;
+    color: #00ff00;
+    display: inline-block;
+    padding: 8px 16px;
+    font-family: 'Courier New', monospace;
+    border: 3px ridge #888;
+    font-size: 18px;
+  }
+  .counter b { color: #ff3333; background:#fff; padding:0 4px; }
+
+  footer {
+    margin-top: 26px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 #000;
+  }
+  footer a { color: #00ffff; }
+
+  /* falling money */
+  .money {
+    position: fixed;
+    top: -50px;
+    font-size: 30px;
+    z-index: 0;
+    pointer-events: none;
+    animation: fall linear infinite;
+  }
+  @keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+    body { background-position: 0 0; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="star tl">✴️</div>
+  <div class="star tr">🌟</div>
+  <div class="star bl">💫</div>
+  <div class="star br">⭐</div>
+
+  <div class="marquee"><span>🎉 CONGRATULATIONS!!! YOU ARE THE 1,000,000th VISITOR!!! 🎉 CLAIM YOUR FREE $20 GIFT CARD NOW!!! 🎉 NO PURCHASE NECESSARY* 🎉 LIMITED TIME ONLY!!! 🎉 ACT FAST!!! 🎉</span></div>
+
+  <div class="wrap">
+    <div class="eyebrow blink">⚡ HOT DEAL ALERT ⚡</div>
+
+    <div class="twenty">$20</div>
+    <div class="giftcard">GIFT CARD</div>
+    <div class="from">FROM<small>📚 BOSWELL'S 📚</small></div>
+
+    <div class="badge">100%<br>FREE!!!</div>
+
+    <div><span class="underline blink">YES IT'S REAL!!!</span></div>
+
+    <div>
+      <button class="claim" onclick="party()">👉 CLAIM IT NOW 👈</button>
+      <!-- Maps link fires on click -->
+    </div>
+
+    <div>
+      <span class="underline">✅ INSTANT</span>
+      <span class="underline">✅ NO CATCH</span>
+      <span class="underline">✅ SO MUCH BOOKS</span>
+    </div>
+
+    <div class="counter">★ VISITOR COUNTER ★ &nbsp; <b>0</b><b>0</b><b>1</b><b>3</b><b>3</b><b>7</b></div>
+  </div>
+
+  <div class="marquee rtl"><span>💰💰💰 TWENTY WHOLE DOLLARS 💰💰💰 SPEND IT ON BOOKS 📖 OR MORE BOOKS 📚 OR EVEN MORE BOOKS 📕 WOW!!! 💰💰💰</span></div>
+
+<script>
+  // falling money
+  const bills = ['💵','💰','💴','💶','💷','🤑'];
+  function rain() {
+    const m = document.createElement('div');
+    m.className = 'money';
+    m.textContent = bills[Math.floor(Math.random()*bills.length)];
+    m.style.left = Math.random()*100 + 'vw';
+    m.style.animationDuration = (3 + Math.random()*4) + 's';
+    m.style.fontSize = (20 + Math.random()*30) + 'px';
+    document.body.appendChild(m);
+    setTimeout(() => m.remove(), 7000);
+  }
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setInterval(rain, 250);
+  }
+
+  function party() {
+    for (let i = 0; i < 60; i++) setTimeout(rain, i*20);
+    window.open('https://maps.google.com/?q=2559+N+Downer+Ave,+Milwaukee,+WI+53211', '_blank');
+  }
+</script>
+</body>
+</html>
